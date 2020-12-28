@@ -14,5 +14,5 @@
 12. [x] Write a C program to put even and odd elements of array in two separate array.
 13. [x] Write a C program to search an element in an array.
 14. [x] Write a C program to sort array elements in ascending or descending order.
-15. [] Write a C program to left rotate an array by n positions.
-16. [] Write a C program to right rotate an array by n postions.
+15. [ ] Write a C program to left rotate an array by n positions.
+16. [ ] Write a C program to right rotate an array by n postions.
