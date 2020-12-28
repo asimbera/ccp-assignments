@@ -1,3 +1,73 @@
+-   [Functions](#functions)
+    -   [Write a C program to find cube of any number using
+        function.](#write-a-c-program-to-find-cube-of-any-number-using-function.)
+    -   [Write a C program to find diameter, circumference and area of
+        circle using
+        functions.](#write-a-c-program-to-find-diameter-circumference-and-area-of-circle-using-functions.)
+    -   [Write a C program to find maximum and minimum between two
+        numbers using
+        functions.](#write-a-c-program-to-find-maximum-and-minimum-between-two-numbers-using-functions.)
+    -   [Write a C program to check whether a number is even or odd
+        using
+        functions.](#write-a-c-program-to-check-whether-a-number-is-even-or-odd-using-functions.)
+    -   [Write a C program to check whether a number is prime or not
+        using
+        function.](#write-a-c-program-to-check-whether-a-number-is-prime-or-not-using-function.)
+    -   [Write a program to check whether a number is an Armstrong
+        number or not using
+        function.](#write-a-program-to-check-whether-a-number-is-an-armstrong-number-or-not-using-function.)
+    -   [WAP to check a number is perfect number or not using
+        functions.](#wap-to-check-a-number-is-perfect-number-or-not-using-functions.)
+    -   [Write a C program to find all prime numbers between given
+        interval using
+        functions.](#write-a-c-program-to-find-all-prime-numbers-between-given-interval-using-functions.)
+    -   [Write a C program to print all strong numbers between given
+        interval using
+        functions.](#write-a-c-program-to-print-all-strong-numbers-between-given-interval-using-functions.)
+    -   [Write a C program to print all Armstrong numbers between given
+        interval using
+        functions.](#write-a-c-program-to-print-all-armstrong-numbers-between-given-interval-using-functions.)
+    -   [Write a C program to print all perfect numbers between given
+        interval using
+        functions.](#write-a-c-program-to-print-all-perfect-numbers-between-given-interval-using-functions.)
+-   [Recursion](#recursion)
+    -   [Write a C program to find power of any number using
+        recursion.](#write-a-c-program-to-find-power-of-any-number-using-recursion.)
+    -   [Write a C program to print all natural numbers between 1 to n
+        using
+        recursion.](#write-a-c-program-to-print-all-natural-numbers-between-1-to-n-using-recursion.)
+    -   [Write a C program to print all even or odd numbers in given
+        range using
+        recursion.](#write-a-c-program-to-print-all-even-or-odd-numbers-in-given-range-using-recursion.)
+    -   [Write a C program to find sum of all natural numbers between 1
+        to n using
+        recursion.](#write-a-c-program-to-find-sum-of-all-natural-numbers-between-1-to-n-using-recursion.)
+    -   [Write a C program to find sum of all even or odd numbers in
+        given range using
+        recursion.](#write-a-c-program-to-find-sum-of-all-even-or-odd-numbers-in-given-range-using-recursion.)
+    -   [Write a C program to find reverse of any number using
+        recursion.](#write-a-c-program-to-find-reverse-of-any-number-using-recursion.)
+    -   [Write a C program to check whether a number is palindrome or
+        not using
+        recursion.](#write-a-c-program-to-check-whether-a-number-is-palindrome-or-not-using-recursion.)
+    -   [Write a C program to find sum of digits of a given number using
+        recursion.](#write-a-c-program-to-find-sum-of-digits-of-a-given-number-using-recursion.)
+    -   [Write a C program to find factorial of any number using
+        recursion.](#write-a-c-program-to-find-factorial-of-any-number-using-recursion.)
+    -   [Write a C program to generate nth Fibonacci term using
+        recursion.](#write-a-c-program-to-generate-nth-fibonacci-term-using-recursion.)
+    -   [Write a C program to find GCD (HCF) of two numbers using
+        recursion.](#write-a-c-program-to-find-gcd-hcf-of-two-numbers-using-recursion.)
+    -   [Write a C program to find LCM of two numbers using
+        recursion.](#write-a-c-program-to-find-lcm-of-two-numbers-using-recursion.)
+    -   [Write a C program to display all array elements using
+        recursion.](#write-a-c-program-to-display-all-array-elements-using-recursion.)
+    -   [Write a C program to find sum of elements of array using
+        recursion.](#write-a-c-program-to-find-sum-of-elements-of-array-using-recursion.)
+    -   [Write a C program to find maximum and minimum elements in array
+        using
+        recursion.](#write-a-c-program-to-find-maximum-and-minimum-elements-in-array-using-recursion.)
+
 # Functions
 
 ## Write a C program to find cube of any number using function.
