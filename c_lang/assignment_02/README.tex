@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Programming in C}
+\rhead{Asim Bera}
+\lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{If Else}
+\problem{01}{Write a C program to find maximum between two numbers.}
+\problem{02}{Write a C program to find maximum between three numbers.}
+\problem{03}{Write a C program to check whether a number is negative, positive or zero.}
+\problem{04}{Write a C program to check whether a number is divisible by 5 and 11 or not.}
+\problem{05}{Write a C program to check whether a number is even or odd.}
+\problem{06}{Write a C program to check whether a year is leap year or not.}
+\problem{07}{Write a C program to check whether a character is alphabet or not.}
+\problem{08}{Write a C program to input any alphabet and check whether it is vowel or consonant.}
+\problem{09}{Write a C program to input any character and check whether it is alphabet, digit or special character.}
+\problem{10}{Write a C program to check whether a character is uppercase or lowercase alphabet.}
+\problem{11}{Write a C program to input week number and print week day.}
+\problem{12}{Write a C program to input month number and print number of days in that month.}
+\problem{13}{Write a C program to count total number of notes in given amount.}
+\problem{14}{Write a C program to input angles of a triangle and check whether triangle is valid or not.}
+\problem{15}{Write a C program to input all sides of a triangle and check whether triangle is valid or not.}
+\problem{16}{Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.}
+\problem{17}{Write a C program to find all roots of a quadratic equation.}
+\problem{18}{Write a C program to calculate profit or loss.}
+\problem{19}{Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: \\
+$ Percentage >= 90\% : Grade A \\
+Percentage >= 80\% : Grade B \\
+Percentage >= 70\% : Grade C \\
+Percentage >= 60\% : Grade D \\
+Percentage >= 40\% : Grade E \\
+Percentage < 40\% : Grade F $
+}
+\problem{20}{Write a C program to input basic salary of an employee and calculate its Gross salary according to following: \\
+$ {Basic Salary} <= 10000 : HRA = 20\%, DA = 80\% \\
+Basic Salary <= 20000 : HRA = 25\%, DA = 90\% \\
+Basic Salary > 20000 : HRA = 30\%, DA = 95\% $
+}
+\problem{21}{Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: \\
+For first 50 units Rs. 0.50/unit \\
+For next 100 units Rs. 0.75/unit \\
+For next 100 units Rs. 1.20/unit \\
+For unit above 250 Rs. 1.50/unit \\
+An additional surcharge of 20\% is added to the bill.
+}
+
+\end{document}
+
