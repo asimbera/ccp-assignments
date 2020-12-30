@@ -4,6 +4,8 @@ This is a archive of assignments with solution of CST Branch from 3rd semester a
 
 This repo currently contains source codes and LaTeX documentation with PDF outputs for following subjects and topics:
 
+## Table of Contents
+
 - [Programming in C](c_lang)
   1. [Basics I/O](c_lang/assignment_01)
   2. [If-Else](c_lang/assignment_02)
