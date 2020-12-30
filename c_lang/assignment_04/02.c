@@ -8,17 +8,15 @@ int main()
   scanf("%d", &b);
 
   // take input
+  printf("Enter array Elements: ");
   for (int i = 0; i < b; i++)
-  {
-    printf("Element %d => ", i);
     scanf("%d", &a[i]);
-  }
   // print elements
-  printf("Negative Elements :\n");
+  printf("Negative Elements: ");
   for (int i = 0; i < b; i++)
   {
     if (a[i] < 0)
-      printf("Element %d => %d\n", i, a[i]);
+      printf("%d ", a[i]);
   }
 
   return 0;

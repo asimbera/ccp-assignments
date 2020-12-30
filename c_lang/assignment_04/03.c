@@ -8,16 +8,12 @@ int main()
   scanf("%d", &b);
 
   // take input
+  printf("Enter array Elements: ");
   for (int i = 0; i < b; i++)
-  {
-    printf("Element %d => ", i);
     scanf("%d", &a[i]);
-  }
   // print elements
   for (int i = 0; i < b; i++)
-  {
     sum += a[i];
-  }
 
   printf("Sum = %d\n", sum);
 

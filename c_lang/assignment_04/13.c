@@ -6,11 +6,9 @@ int main()
 
   printf("No of elements: ");
   scanf("%d", &l);
+  printf("Enter array elements: ");
   for (int i = 0; i < l; i++)
-  {
-    printf("Elem (%d): ", i);
     scanf("%d", &arr[i]);
-  }
 
   printf("Element to search: ");
   scanf("%d", &q);

@@ -8,22 +8,16 @@ int main()
   scanf("%d", &c);
 
   // take input
+  printf("Enter array Elements: ");
   for (int i = 0; i < c; i++)
-  {
-    printf("Element %d => ", i);
     scanf("%d", &a[i]);
-  }
 
   for (int i = 0; i < c; i++)
-  {
     b[i] = a[i];
-  }
+
   printf("Elements of array b => ");
   for (int i = 0; i < c; i++)
-  {
     printf("%d ", b[i]);
-  }
-  printf("\n");
 
   return 0;
 }

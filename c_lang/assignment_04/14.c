@@ -9,16 +9,14 @@ int main()
   scanf("%d", &l);
 
   // take input
+  printf("Enter array elements: ");
   for (int i = 0; i < l; i++)
-  {
-    printf("Element (%d): ", i);
     scanf("%d", &a[i]);
-  }
 
-  printf("\nOrder (0 = ascending, 1 = descending): ");
-  scanf("%d", &order);
+  printf("Sort Order (0 = ascending, 1 = descending): ");
+  scanf(" %d", &order);
 
-  // selectionsort
+  // selection sort
   for (int i = 0; i < l; i++)
   {
     int m = a[i], n = !order ? INT_MAX : INT_MIN, o = i;
@@ -34,12 +32,9 @@ int main()
     a[o] = m;
   }
 
-  // print all elements
-  printf("\nElements :\n");
+  printf("Sorted Array: ");
   for (int i = 0; i < l; i++)
-  {
     printf("%d ", a[i]);
-  }
 
   return 0;
 }

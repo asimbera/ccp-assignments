@@ -2,46 +2,29 @@
 
 int main()
 {
-  int arr_a[100],
-      // array of even numbers
-      arr_b[50],
-      // array of odd numbers
-      arr_c[50],
-      // l = first array length, p = pointer of arr_b, q = pointer of arr_c
-      l, p = 0, q = 0;
+  int arr[100], arr_even[50], arr_odd[50], arr_len, p = 0, q = 0;
 
   printf("No of elements: ");
-  scanf("%d", &l);
-  for (int i = 0; i < l; i++)
-  {
-    printf("Elem (%d): ", i);
-    scanf("%d", &arr_a[i]);
-  }
+  scanf("%d", &arr_len);
+  printf("Enter array elements: ");
+  for (int i = 0; i < arr_len; i++)
+    scanf("%d", &arr[i]);
 
-  for (int i = 0; i < l; i++)
+  for (int i = 0; i < arr_len; i++)
   {
-    if (arr_a[i] % 2 == 0)
-    {
-      arr_b[p] = arr_a[i];
-      p++;
-    }
+    if (arr[i] % 2 == 0)
+      arr_even[p++] = arr[i];
     else
-    {
-      arr_c[q] = arr_a[i];
-      q++;
-    }
+      arr_odd[q++] = arr[i];
   }
 
-  printf("\nEven array: \n");
+  printf("\nEven array: ");
   for (int i = 0; i < p; i++)
-  {
-    printf("%d ", arr_b[i]);
-  }
-  printf("\nOdd array: \n");
+    printf("%d ", arr_even[i]);
+
+  printf("\nOdd array: ");
   for (int i = 0; i < q; i++)
-  {
-    printf("%d ", arr_c[i]);
-  }
+    printf("%d ", arr_odd[i]);
 
   return 0;
 }

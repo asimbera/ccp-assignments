@@ -1,33 +1,24 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main()
 {
   int a[50];
-  int b, max, min;
+  int b, max = INT_MIN, min = INT_MAX;
   printf("Enter number of elements => ");
   scanf("%d", &b);
 
   // take input
+  printf("Enter array Elements: ");
   for (int i = 0; i < b; i++)
-  {
-    printf("Element %d => ", i);
     scanf("%d", &a[i]);
-  }
 
   for (int i = 0; i < b; i++)
   {
-    if (i != 0)
-    {
-      if (max < a[i])
-        max = a[i];
-      if (min > a[i])
-        min = a[i];
-    }
-    else
-    {
+    if (max < a[i])
       max = a[i];
+    if (min > a[i])
       min = a[i];
-    }
   }
 
   printf("Maximum: %d, Minimum: %d\n", max, min);
