@@ -12,16 +12,13 @@ int lenOfStr(char text[])
 /// Checks wheather the string is palindrome or not
 int reverseStr(char val[])
 {
-  int len_l = lenOfStr(val), p = 1;
+  int len_l = lenOfStr(val);
   for (int i = 0; i < len_l; i++)
   {
     if (val[i] != val[len_l - i - 1])
-    {
-      p = 0;
-      break;
-    }
+      return 0;
   }
-  return p;
+  return 1;
 }
 
 int main()
