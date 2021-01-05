@@ -13,4 +13,5 @@ This repo currently contains source codes and LaTeX documentation with PDF outpu
   4. [x] [Array](c_lang/assignment_04)
   5. [x] [Function & Recursion](c_lang/assignment_05)
   6. [x] [Strings in C](c_lang/assignment_06)
+  7. [ ] [Pointers](c_lang/assignment_07)
 - [Data Structure](data_structure)
