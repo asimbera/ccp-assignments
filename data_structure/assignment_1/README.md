@@ -5,7 +5,7 @@
 1. [x] Write a C Program to calculate sum and average of an array
 2. [x] Write a C Program to print an array in reverse order
 3. [x] Write a C Program to find the largest and smallest element of an array
-4. [] Write a C Program to find the second largest & second smallest e lements in an Array
+4. [x] Write a C Program to find the second largest & second smallest elements in an Array
 5. [x] Write a C Program to Find the Largest Two Numbers in a given Array
 6. [x] Write a C Program to divide one array into two arrays
 7. [x] Write a C to concatenate two arrays
