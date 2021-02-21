@@ -30,7 +30,8 @@ This repository is a collection of open-source implementation of assignment from
 
   - [Data Structure](data_structure)
 
-    `TBA`
+    1. [ ] [Array]()
+    2. [ ] [Stack & Queue]()
 
 ### Usage
 
