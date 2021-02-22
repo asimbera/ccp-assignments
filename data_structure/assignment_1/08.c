@@ -13,10 +13,7 @@ int main()
   printf("No of elements: ");
   scanf("%d", &l);
   for (int i = 0; i < l; i++)
-  {
-    printf("Elem (%d): ", i);
     scanf("%d", &arr_a[i]);
-  }
 
   for (int i = 0; i < l; i++)
   {
@@ -34,14 +31,10 @@ int main()
 
   printf("\nEven array: \n");
   for (int i = 0; i < p; i++)
-  {
     printf("%d ", arr_b[i]);
-  }
   printf("\nOdd array: \n");
   for (int i = 0; i < q; i++)
-  {
     printf("%d ", arr_c[i]);
-  }
 
   return 0;
 }
