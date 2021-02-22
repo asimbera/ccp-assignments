@@ -8,10 +8,7 @@ int main()
   scanf("%d", &l);
 
   for (int i = 0; i < l; i++)
-  {
-    printf("Elem (%d): ", i);
     scanf("%d", &arr[i]);
-  }
 
   for (int i = 0; i < l; i++)
   {
