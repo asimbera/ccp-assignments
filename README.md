@@ -27,6 +27,8 @@ This repository is a collection of open-source implementation of assignment from
     5. [x] [Function & Recursion](c_lang/assignment_05)
     6. [x] [Strings in C](c_lang/assignment_06)
     7. [ ] [Pointers](c_lang/assignment_07)
+    8. [ ] [Structure & Union](c_lang/assignment_08)
+    9. [x] [Pattern Printing](c_lang/assignment_09)
 
   - [Data Structure](data_structure)
 
