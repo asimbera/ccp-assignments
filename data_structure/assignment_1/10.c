@@ -8,20 +8,20 @@
 */
 void quick_sort_asc(int *arr, int len)
 {
-  int i, j, m, n, o;
-  for (i = 0; i < len; i++)
+  int itr, next, temp, n, o;
+  for (itr = 0; itr < len; itr++)
   {
-    m = arr[i], n = INT_MAX, o = i;
-    for (j = i; j < len; j++)
+    temp = arr[itr], n = INT_MAX, o = itr;
+    for (next = itr; next < len; next++)
     {
-      if (n > arr[j])
+      if (n > arr[next])
       {
-        n = arr[j];
-        o = j;
+        n = arr[next];
+        o = next;
       }
     }
-    arr[i] = n;
-    arr[o] = m;
+    arr[itr] = n;
+    arr[o] = temp;
   }
 }
 

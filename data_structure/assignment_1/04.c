@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
 
-/**
- * Sort an array with QuickSort
- * @param arr Pointer of the array to sort
- * @param len The length of the array
- * @param order Sorting order, 0 for ascending and 1 for descending
-*/
 void quick_sort(int *arr, int len, int order)
 {
   int i, j, m, n, o;
