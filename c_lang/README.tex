@@ -1,0 +1,197 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Programming in C}
+\rhead{Asim Bera}
+\lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+
+% macros start here
+\newcommand{\problem}[3]{
+  \section{#3}
+    \underline{\emph{\Large Source Code :}}
+    \inputminted[breaklines]{C}{#1.c}
+    \bigbreak
+    \noindent
+    \underline{\emph{\Large Program Output :}}
+    \bigbreak
+    \noindent
+    \includegraphics{#2}
+% \newpage
+}
+\newcommand{\subproblem}[3]{
+  \subsection{#3}
+    \underline{\emph{\Large Source Code :}}
+    \inputminted[breaklines]{C}{#1.c}
+    \bigbreak
+    \noindent
+    \underline{\emph{\Large Program Output :}}
+    \bigbreak
+    \noindent
+    \includegraphics{#2}
+% \newpage
+}
+% macros end here
+
+% document settings end
+
+\begin{document}
+\input{./cover}
+\newpage
+\tableofcontents
+% \newpage
+
+% add problems here
+\chapter{Basic I/O}
+\problem{assignment_01/01}{01_01}{Write a C program to perform input/output of all basic data types.}
+\problem{assignment_01/02}{01_02}{Write a C program to enter two numbers and find their sum.}
+\problem{assignment_01/03}{01_03}{Write a C program to enter two numbers and perform all arithmetic operations.}
+\problem{assignment_01/04}{01_04}{Write a C program to enter length and breadth of a rectangle and find its perimeter.}
+\problem{assignment_01/05}{01_05}{Write a C program to enter length and breadth of a rectangle and find its area.}
+\problem{assignment_01/06}{01_06}{Write a C program to enter radius of a circle find its diameter, circumference and area.}
+\problem{assignment_01/07}{01_07}{Write a program to enter length in cm and convrt it into meter and kilometer.}
+\problem{assignment_01/08}{01_08}{Write a program to enter temperature in Celsius and convert it into Farenheit.}
+\problem{assignment_01/09}{01_09}{Write a program to enter temperature in Farenheit and convert it into Celsius.}
+\problem{assignment_01/10}{01_10}{Write a C program to convert days into years, weeks and days.}
+\problem{assignment_01/11}{01_11}{Write a C program to find xy of any number x and power y.}
+\problem{assignment_01/12}{01_12}{Write a C program to enter any number and calculate its square root.}
+\problem{assignment_01/13}{01_13}{Write a C program to enter two angles of a triangle and find its third angle.}
+\problem{assignment_01/14}{01_14}{Write a C program to enter base and height of a triangle and find its area.}
+\problem{assignment_01/15}{01_15}{Write a C program to calculate area of an equilateral triangle.}
+\problem{assignment_01/16}{01_16}{Write a C program to enter marks of five subjects and calculate total, average and percentage.}
+\problem{assignment_01/17}{01_17}{Write a C program to enter P, T, R and calculate Simple Interest.}
+\problem{assignment_01/18}{01_18}{Write a C program to enter P, T, R and calculate Compound Interest.}
+
+
+\chapter{If-Else}
+\problem{assignment_02/01}{02_01}{Write a C program to find maximum between two numbers.}
+\problem{assignment_02/02}{02_02}{Write a C program to find maximum between three numbers.}
+\problem{assignment_02/03}{02_03}{Write a C program to check whether a number is negative, positive or zero.}
+\problem{assignment_02/04}{02_04}{Write a C program to check whether a number is divisible by 5 and 11 or not.}
+\problem{assignment_02/05}{02_05}{Write a C program to check whether a number is even or odd.}
+\problem{assignment_02/06}{02_06}{Write a C program to check whether a year is leap year or not.}
+\problem{assignment_02/07}{02_07}{Write a C program to check whether a character is alphabet or not.}
+\problem{assignment_02/08}{02_08}{Write a C program to input any alphabet and check whether it is vowel or consonant.}
+\problem{assignment_02/09}{02_09}{Write a C program to input any character and check whether it is alphabet, digit or special character.}
+\problem{assignment_02/10}{02_10}{Write a C program to check whether a character is uppercase or lowercase alphabet.}
+\problem{assignment_02/11}{02_11}{Write a C program to input week number and print week day.}
+\problem{assignment_02/12}{02_12}{Write a C program to input month number and print number of days in that month.}
+\problem{assignment_02/13}{02_13}{Write a C program to count total number of notes in given amount.}
+\problem{assignment_02/14}{02_14}{Write a C program to input angles of a triangle and check whether triangle is valid or not.}
+\problem{assignment_02/15}{02_15}{Write a C program to input all sides of a triangle and check whether triangle is valid or not.}
+\problem{assignment_02/16}{02_16}{Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.}
+\problem{assignment_02/17}{02_17}{Write a C program to find all roots of a quadratic equation.}
+\problem{assignment_02/18}{02_18}{Write a C program to calculate profit or loss.}
+\problem{assignment_02/19}{02_19}{Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: \\
+$ Percentage >= 90\% : Grade A \\
+Percentage >= 80\% : Grade B \\
+Percentage >= 70\% : Grade C \\
+Percentage >= 60\% : Grade D \\
+Percentage >= 40\% : Grade E \\
+Percentage < 40\% : Grade F $
+}
+\problem{assignment_02/20}{02_20}{Write a C program to input basic salary of an employee and calculate its Gross salary according to following: \\
+$ {Basic Salary} <= 10000 : HRA = 20\%, DA = 80\% \\
+Basic Salary <= 20000 : HRA = 25\%, DA = 90\% \\
+Basic Salary > 20000 : HRA = 30\%, DA = 95\% $
+}
+\problem{assignment_02/21}{02_21}{Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: \\
+For first 50 units Rs. 0.50/unit \\
+For next 100 units Rs. 0.75/unit \\
+For next 100 units Rs. 1.20/unit \\
+For unit above 250 Rs. 1.50/unit \\
+An additional surcharge of 20\% is added to the bill.
+}
+
+
+\chapter{Bitwise, Switch, Loops}
+\chapter{Array}
+\problem{assignment_04/01}{04_01}{Write a C program to read and print elements of array.}
+\problem{assignment_04/02}{04_02}{Write a C program to print all negative elements in an array.}
+\problem{assignment_04/03}{04_03}{Write a C program to find sum of all array elements.}
+\problem{assignment_04/04}{04_04}{Write a C program to find maximum and minimum element in an array.}
+\problem{assignment_04/05}{04_05}{Write a C program to count total number of even and odd elements in an array.}
+\problem{assignment_04/06}{04_06}{Write a C program to count total number of negative elements in an array.}
+\problem{assignment_04/07}{04_07}{Write a C program to copy all elements from an array to another array.}
+\problem{assignment_04/08}{04_08}{Write a C program to insert an element in an array.}
+\problem{assignment_04/09}{04_09}{Write a C program to delete an element from an array at specified position.}
+\problem{assignment_04/10}{04_10}{Write a C program to merge two array to third array.}
+\problem{assignment_04/11}{04_11}{Write a C program to find reverse of an array.}
+\problem{assignment_04/12}{04_12}{Write a C program to put even and odd elements of array in two separate array.}
+\problem{assignment_04/13}{04_13}{Write a C program to search an element in an array.}
+\problem{assignment_04/14}{04_14}{Write a C program to sort array elements in ascending or descending order.}
+\problem{assignment_04/15}{04_15}{Write a C program to left rotate an array by n positions.}
+\problem{assignment_04/16}{04_16}{Write a C program to right rotate an array by n postions.}
+
+\chapter{Function \& Recursion}
+\section{Functions}
+\subproblem{assignment_05/f_01}{05_f_01}{Write a C program to find cube of any number using function.}
+\subproblem{assignment_05/f_02}{05_f_02}{Write a C program to find diameter, circumference and area of circle using functions.}
+\subproblem{assignment_05/f_03}{05_f_03}{Write a C program to find maximum and minimum between two numbers using functions.}
+\subproblem{assignment_05/f_04}{05_f_04}{Write a C program to check whether a number is even or odd using functions.}
+\subproblem{assignment_05/f_05}{05_f_05}{Write a C program to check whether a number is prime or not using function.}
+\subproblem{assignment_05/f_06}{05_f_06}{Write a program to check whether a number is an Armstrong number or not using function.}
+\subproblem{assignment_05/f_07}{05_f_07}{WAP to check a number is perfect number or not using functions.}
+\subproblem{assignment_05/f_08}{05_f_08}{Write a C program to find all prime numbers between given interval using functions.}
+\subproblem{assignment_05/f_09}{05_f_09}{Write a C program to print all strong numbers between given interval using functions.}
+\subproblem{assignment_05/f_10}{05_f_10}{Write a C program to print all Armstrong numbers between given interval using functions.}
+\subproblem{assignment_05/f_11}{05_f_11}{Write a C program to print all perfect numbers between given interval using functions.}
+\section{Recursion}
+\subproblem{assignment_05/r_01}{05_r_01}{Write a C program to find power of any number using recursion.}
+\subproblem{assignment_05/r_02}{05_r_02}{Write a C program to print all natural numbers between 1 to n using recursion.}
+\subproblem{assignment_05/r_03}{05_r_03}{Write a C program to print all even or odd numbers in given range using recursion.}
+\subproblem{assignment_05/r_04}{05_r_04}{Write a C program to find sum of all natural numbers between 1 to n using recursion.}
+\subproblem{assignment_05/r_05}{05_r_05}{Write a C program to find sum of all even or odd numbers in given range using recursion.}
+\subproblem{assignment_05/r_06}{05_r_06}{Write a C program to find reverse of any number using recursion.}
+\subproblem{assignment_05/r_07}{05_r_07}{Write a C program to check whether a number is palindrome or not using recursion.}
+\subproblem{assignment_05/r_08}{05_r_08}{Write a C program to find sum of digits of a given number using recursion.}
+\subproblem{assignment_05/r_09}{05_r_09}{Write a C program to find factorial of any number using recursion.}
+\subproblem{assignment_05/r_10}{05_r_10}{Write a C program to generate nth Fibonacci term using recursion.}
+\subproblem{assignment_05/r_11}{05_r_11}{Write a C program to find GCD (HCF) of two numbers using recursion.}
+\subproblem{assignment_05/r_12}{05_r_12}{Write a C program to find LCM of two numbers using recursion.}
+\subproblem{assignment_05/r_13}{05_r_13}{Write a C program to display all array elements using recursion.}
+\subproblem{assignment_05/r_14}{05_r_14}{Write a C program to find sum of elements of array using recursion.}
+\subproblem{assignment_05/r_15}{05_r_15}{Write a C program to find maximum and minimum elements in array using recursion.}
+
+
+\chapter{Strings}
+\problem{assignment_06/01}{06_01}{Write a C program to find length of a string.}
+\problem{assignment_06/02}{06_02}{Write a C program to copy one string to another string.}
+\problem{assignment_06/03}{06_03}{Write a C program to concatenate two strings.}
+\problem{assignment_06/04}{06_04}{Write a C program to compare two strings.}
+\problem{assignment_06/05}{06_05}{Write a C program to convert lowercase string to uppercase. }
+\problem{assignment_06/06}{06_06}{Write a C program to find total number of alphabets, digits or special character in a string.}
+\problem{assignment_06/07}{06_07}{Write a C program to count total number of words in a string.}
+\problem{assignment_06/08}{06_08}{Write a C program to find reverse of a string.}
+\problem{assignment_06/09}{06_09}{Write a C program to check whether a string is palindrome or not.}
+\problem{assignment_06/10}{06_10}{Write a C program to find first occurrence of a character in a given string.}
+\problem{assignment_06/11}{06_11}{Write a C program to count frequency of each character in a string.}
+
+\chapter{Pointers}
+\chapter{Structure \& Union}
+\chapter{Pattern Printing}
+
+
+
+\end{document}
+
