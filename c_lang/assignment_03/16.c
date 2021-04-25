@@ -2,19 +2,17 @@
 
 int main()
 {
-  int n, r;
+  int num, reverse = 0, remain;
   printf("Enter a number => ");
-  scanf("%d", &n);
+  scanf("%d", &num);
 
-  printf("In reverse => ");
-  while (n != 0)
+  while (num != 0)
   {
-    r = n % 10;
-    printf("%d", r);
-    n /= 10;
+    reverse = (reverse * 10) + (num % 10);
+    num /= 10;
   }
 
-  printf("\n");
+  printf("Reversed =>  %d\n", reverse);
 
   return 0;
 }

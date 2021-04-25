@@ -2,15 +2,12 @@
 
 int main()
 {
-  int i = 0, n;
+  int i = 1, n;
   printf("Enter target (n) => ");
   scanf("%d", &n);
 
   while (i <= n)
-  {
-    printf("%d ", i);
-    i++;
-  }
+    printf("%d ", i++);
   printf("\n");
 
   return 0;

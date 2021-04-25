@@ -7,9 +7,7 @@ int main()
   // ASCII 32 is space character.
   int start = 32, limit = 126;
   for (int i = start; i <= limit; i++)
-  {
-    printf("ASCII Code : %d => %c\n", i, i);
-  }
+    printf("%d : %c, ", i, i);
 
   printf("\n");
 

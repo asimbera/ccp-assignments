@@ -1,65 +1,57 @@
-// logic dump from https://github.com/asimbera/project_euler/blob/master/Problem%20017/index.js
-
 #include <stdio.h>
 
 int main()
 {
-  int n, length = 0;
-  printf("Enter a number (n) => ", n);
-  scanf("%d", &n);
+  int num, rev = 0;
+  printf("Enter a number: ");
+  scanf("%d", &num);
 
-  while (n != 0)
+  while (num != 0)
   {
-    length += 1;
-    n /= 10;
+    rev = (rev * 10) + (num % 10);
+    num /= 10;
   }
 
-  // TODO
-  switch (length)
+  while (rev != 0)
   {
-  case 1:
-    switch (n)
+    switch (rev % 10)
     {
     case 1:
-      printf("One");
+      printf("One ");
       break;
     case 2:
-      printf("Two");
+      printf("Two ");
       break;
     case 3:
-      printf("Three");
+      printf("Three ");
       break;
     case 4:
-      printf("Four");
+      printf("Four ");
       break;
     case 5:
-      printf("Five");
+      printf("Five ");
       break;
     case 6:
-      printf("Six");
+      printf("Six ");
       break;
     case 7:
-      printf("Seven");
+      printf("Seven ");
       break;
-
-    default:
+    case 8:
+      printf("Eight ");
+      break;
+    case 9:
+      printf("Nine ");
+      break;
+    case 0:
+      printf("Zero ");
       break;
     }
-    break;
-  case 2:
-    /* code */
-    break;
-  case 3:
-    /* code */
-    break;
-  case 4:
-    /* code */
-    break;
 
-  default:
-    printf("Unimplemented length: %d", length);
-    break;
+    rev /= 10;
   }
+
+  printf("\n");
 
   return 0;
 }

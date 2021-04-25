@@ -2,22 +2,21 @@
 
 int main()
 {
-  int i = 0, n, l;
-  printf("Enter a number (n) => ", n);
-  scanf("%d", &n);
+  int i = 0, num, last;
+  printf("Enter a number (num) => ", num);
+  scanf("%d", &num);
 
-  l = n % 10;
+  last = num % 10;
 
-  while (n != 0)
+  while (num != 0)
   {
-    // printf("%d\n", n);
-    if (n < 10)
+    if (num < 10)
       break;
-    n /= 10;
+    num /= 10;
   }
 
-  printf("First digit = %d\n", n);
-  printf("Last digit = %d\n", l);
+  printf("First digit = %d\n", num);
+  printf("Last digit = %d\n", last);
 
   return 0;
 }

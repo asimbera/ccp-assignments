@@ -2,20 +2,19 @@
 
 int main()
 {
-  int n, rev = 0, it, temp;
-  printf("Enter a number (n) => ", n);
-  scanf("%d", &n);
+  int num, rev = 0, it;
+  printf("Enter a number (num) => ", num);
+  scanf("%d", &num);
 
-  it = n;
+  it = num;
 
   while (it != 0)
   {
-    temp = it % 10;
-    rev = (rev * 10) + temp;
+    rev = (rev * 10) + (it % 10);
     it /= 10;
   }
 
-  printf("%d is %s.\n", n, n == rev ? "a palindrome" : "not a palindrome");
+  printf("%d is %s.\n", num, num == rev ? "a palindrome" : "not a palindrome");
 
   return 0;
 }

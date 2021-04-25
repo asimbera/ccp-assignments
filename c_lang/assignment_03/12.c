@@ -8,8 +8,10 @@ int main()
   printf("Multiplication Table :\n");
   while (i <= 10)
   {
-    printf("%d x %d = %d\n", n, i, n * i);
+    printf("%d x %d = %d, ", n, i, n * i);
     i++;
   }
+  printf("\n");
+
   return 0;
 }

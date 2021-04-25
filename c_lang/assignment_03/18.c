@@ -2,7 +2,7 @@
 
 int main()
 {
-  int n, it, temp;
+  int n, it;
   int one = 0, two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0, eight = 0, nine = 0, zero = 0;
   printf("Enter a number (n) => ");
   scanf("%d", &n);
@@ -11,8 +11,7 @@ int main()
 
   while (it != 0)
   {
-    temp = it % 10;
-    switch (temp)
+    switch (it % 10)
     {
     case 1:
       one += 1;
@@ -48,7 +47,7 @@ int main()
     it /= 10;
   }
 
-  printf("__Digit Count__");
+  printf("__Digit Count__\n");
   printf("One: %d, Two: %d, Three: %d, Four: %d, Five: %d, Six: %d, Seven: %d, Eight: %d, Nine: %d, Zero: %d\n", one, two, three, four, five, six, seven, eight, nine, zero);
 
   return 0;

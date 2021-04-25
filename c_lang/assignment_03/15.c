@@ -2,14 +2,14 @@
 
 int main()
 {
-  int n, r, sum = 0;
+  int num, remain, sum = 0;
   printf("Enter a number => ");
-  scanf("%d", &n);
-  while (n != 0)
+  scanf("%d", &num);
+  while (num != 0)
   {
-    r = n % 10;
-    sum += r;
-    n /= 10;
+    remain = num % 10;
+    sum += remain;
+    num /= 10;
   }
 
   printf("Sum of digits = %d\n", sum);

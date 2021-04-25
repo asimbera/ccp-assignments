@@ -9,9 +9,7 @@ int main()
   scanf("%d", &pow);
 
   for (int i = 1; i <= pow; i++)
-  {
     val *= num;
-  }
 
   printf("Ans: %d ^ %d = %d\n", num, pow, val);
 
