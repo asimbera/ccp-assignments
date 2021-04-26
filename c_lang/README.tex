@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{fancyhdr}
@@ -7,8 +7,9 @@
 \usepackage{hyperref}
 
 % document settings start
-\geometry{a4paper, margin=0.9in}
+\geometry{a4paper, margin=0.7in}
 \graphicspath{{./outputs/}}
+\usemintedstyle{emacs}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -57,8 +58,11 @@ urlcolor=blue,
 
 \begin{document}
 \input{./cover}
+\pagenumbering{roman}
 \newpage
 \tableofcontents
+\clearpage
+\pagenumbering{arabic}
 % \newpage
 
 % add problems here
@@ -125,6 +129,46 @@ An additional surcharge of 20\% is added to the bill.
 
 
 \chapter{Bitwise, Switch, Loops}
+\section{Bitwise Operators}
+\subproblem{assignment_03/01}{03_01}{Write a C program to swap two numbers using bitwise operator.}
+\subproblem{assignment_03/02}{03_02}{Write a C program to check whether a number is even or odd using bitwise operator.}
+\section{Switch}
+\subproblem{assignment_03/03}{03_03}{Write a C program to check whether a number is even or odd using switch case.}
+\subproblem{assignment_03/04}{03_04}{Write a C program to check whether a number is positive, negative or zero using switch case.}
+\subproblem{assignment_03/05}{03_05}{Write a C program to create Simple Calculator using switch case.}
+\section{Loops}
+\subproblem{assignment_03/06}{03_06}{Write a C program to print all natural numbers from 1 to n. - using while loop}
+\subproblem{assignment_03/07}{03_07}{Write a C program to print all natural numbers in reverse \(from n to 1\). - using while loop}
+\subproblem{assignment_03/08}{03_08}{Write a C program to print all alphabets from a to z. - using while loop}
+\subproblem{assignment_03/09}{03_09}{Write a C program to print all odd number between 1 to 100.}
+\subproblem{assignment_03/10}{03_10}{Write a C program to find sum of all natural numbers between 1 to n.}
+\subproblem{assignment_03/11}{03_11}{Write a C program to find sum of all even numbers between 1 to n.}
+\subproblem{assignment_03/12}{03_12}{Write a C program to print multiplication table of any number.}
+\subproblem{assignment_03/13}{03_13}{Write a C program to count number of digits in a number.}
+\subproblem{assignment_03/14}{03_14}{Write a C program to find first and last digit of a number.}
+\subproblem{assignment_03/15}{03_15}{Write a C program to calculate sum of digits of a number.}
+\subproblem{assignment_03/16}{03_16}{Write a C program to enter a number and print its reverse.}
+\subproblem{assignment_03/17}{03_17}{Write a C program to check whether a number is palindrome or not.}
+\subproblem{assignment_03/18}{03_18}{Write a C program to find frequency of each digit in a given integer.}
+\subproblem{assignment_03/19}{03_19}{Write a C program to enter a number and print it in words.}
+\subproblem{assignment_03/20}{03_20}{Write a C program to print all ASCII character with their values.}
+\subproblem{assignment_03/21}{03_21}{Write a C program to find power of a number using for loop.}
+\subproblem{assignment_03/22}{03_22}{Write a C program to find all factors of a number.}
+\subproblem{assignment_03/23}{03_23}{Write a C program to calculate factorial of a number.}
+\subproblem{assignment_03/24}{03_24}{Write a C program to find HCF \(GCD\) of two numbers.}
+\subproblem{assignment_03/25}{03_25}{Write a C program to check whether a number is Prime number or not.}
+\subproblem{assignment_03/26}{03_26}{Write a C program to print all Prime numbers between 1 to n.}
+\subproblem{assignment_03/27}{03_27}{Write a C program to find sum of all prime numbers between 1 to n.}
+\subproblem{assignment_03/28}{03_28}{Write a C program to find all prime factors of a number.}
+\subproblem{assignment_03/29}{03_29}{Write a C program to check whether a number is Armstrong number or not.}
+\subproblem{assignment_03/30}{03_30}{Write a C program to print all Armstrong numbers between 1 to n.}
+\subproblem{assignment_03/31}{03_31}{Write a C program to check whether a number is Perfect number or not.}
+\subproblem{assignment_03/32}{03_32}{Write a C program to print all Perfect numbers between 1 to n.}
+\subproblem{assignment_03/33}{03_33}{Write a C program to check whether a number is Strong number or not.}
+\subproblem{assignment_03/34}{03_34}{Write a C program to print all Strong numbers between 1 to n.}
+\subproblem{assignment_03/35}{03_35}{Write a C program to print Fibonacci series up to n terms.}
+
+
 \chapter{Array}
 \problem{assignment_04/01}{04_01}{Write a C program to read and print elements of array.}
 \problem{assignment_04/02}{04_02}{Write a C program to print all negative elements in an array.}
