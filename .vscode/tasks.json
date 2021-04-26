@@ -6,6 +6,7 @@
       "command": "/usr/bin/gcc",
       "args": [
         "-g",
+        "-lm",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}.out"
