@@ -31,15 +31,15 @@
 [x] 21. Write a C program to find power of a number using for loop.
 [x] 22. Write a C program to find all factors of a number.
 [x] 23. Write a C program to calculate factorial of a number.
-[ ] 24. Write a C program to find HCF (GCD) of two numbers.
-[ ] 25. Write a C program to check whether a number is Prime number or not.
-[ ] 26. Write a C program to print all Prime numbers between 1 to n.
-[ ] 27. Write a C program to find sum of all prime numbers between 1 to n.
-[ ] 28. Write a C program to find all prime factors of a number.
-[ ] 29. Write a C program to check whether a number is Armstrong number or not.
-[ ] 30. Write a C program to print all Armstrong numbers between 1 to n.
-[ ] 31. Write a C program to check whether a number is Perfect number or not.
-[ ] 32. Write a C program to print all Perfect numbers between 1 to n.
-[ ] 33. Write a C program to check whether a number is Strong number or not.
-[ ] 34. Write a C program to print all Strong numbers between 1 to n.
-[ ] 35. Write a C program to print Fibonacci series up to n terms.
+[x] 24. Write a C program to find HCF (GCD) of two numbers.
+[x] 25. Write a C program to check whether a number is Prime number or not.
+[x] 26. Write a C program to print all Prime numbers between 1 to n.
+[x] 27. Write a C program to find sum of all prime numbers between 1 to n.
+[x] 28. Write a C program to find all prime factors of a number.
+[x] 29. Write a C program to check whether a number is Armstrong number or not.
+[x] 30. Write a C program to print all Armstrong numbers between 1 to n.
+[x] 31. Write a C program to check whether a number is Perfect number or not.
+[x] 32. Write a C program to print all Perfect numbers between 1 to n.
+[x] 33. Write a C program to check whether a number is Strong number or not.
+[x] 34. Write a C program to print all Strong numbers between 1 to n.
+[x] 35. Write a C program to print Fibonacci series up to n terms.

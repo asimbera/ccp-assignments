@@ -3,24 +3,20 @@
 
 int main()
 {
-  int n, sum = 0;
+  int n, prime_f, sum = 0;
   printf("Enter a number (n) => ");
   scanf("%d", &n);
 
   for (int i = 1; i <= n; i++)
   {
-    int prime_f = 1, sq_rt = sqrt(i);
-    for (int j = 2; j <= sq_rt; j++)
+    prime_f = 1;
+    for (int j = 2; j <= n / 2; j++)
     {
       if (i % j == 0)
-      {
         prime_f = 0;
-      }
     }
     if (prime_f == 1)
-    {
       sum += i;
-    }
   }
 
   printf("Sum of Prime numbers between 1 to %d = %d\n", n, sum);

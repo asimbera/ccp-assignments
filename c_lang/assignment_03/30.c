@@ -18,9 +18,7 @@ int main()
       j /= 10;
     }
     if (i == comp)
-    {
       printf("%d ", i);
-    }
   }
 
   printf("\n");

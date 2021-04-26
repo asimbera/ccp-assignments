@@ -11,7 +11,6 @@ int main()
   while (i != 0)
   {
     r = i % 10;
-    // printf("%d ", r);
     comp += pow(r, 3);
     i /= 10;
   }
