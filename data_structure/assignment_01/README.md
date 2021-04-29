@@ -18,9 +18,9 @@
 14. [x] Write a C Program to Sum of Two Dimensional Arrays
 15. [x] Write a C Program to multiply of Two Dimensional Arrays
 16. [x] Write a C Program to Insert an Element in a Specified Position in a given Array
-17. [ ] Write a C Program to Delete the Specified number from an Array
+17. [x] Write a C Program to Delete the Specified number from an Array
 
 ### Stack & Queue
 
-18. [ ] Write a C Program to Implement a Queue using an Array
-19. [ ] Write a C Program to Implement Stack using Array
+18. [x] Write a C Program to Implement a Queue using an Array
+19. [x] Write a C Program to Implement Stack using Array
