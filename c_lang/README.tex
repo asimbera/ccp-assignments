@@ -1,16 +1,19 @@
 \documentclass{report}
 \usepackage[utf8]{inputenc}
+
+% **********************************************************
+% Document Settings                                        *
+% **********************************************************
 \usepackage{geometry}
-\usepackage{fancyhdr}
-\usepackage{graphicx}
-\usepackage{minted}
-\usepackage{hyperref}
-
-% document settings start
 \geometry{a4paper, margin=0.7in}
-\graphicspath{{./outputs/}}
-\usemintedstyle{emacs}
 
+\usepackage{graphicx}
+\graphicspath{{./outputs/}}
+
+\usepackage{minted}
+% \usemintedstyle{emacs}
+
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{Programming in C}
@@ -18,6 +21,7 @@
 \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
 \rfoot{Page \thepage}
 
+\usepackage{hyperref}
 \hypersetup{
 colorlinks=true,
 linkcolor=blue,
@@ -25,6 +29,10 @@ filecolor=magenta,
 urlcolor=blue,
 }
 \urlstyle{same}
+
+\usepackage{fontspec}
+% \setromanfont{Roboto}
+% \setmonofont{Cascadia Code PL}
 
 
 % macros start here
@@ -54,7 +62,7 @@ urlcolor=blue,
 }
 % macros end here
 
-% document settings end
+% **********************************************************
 
 \begin{document}
 \input{./cover}
@@ -63,9 +71,7 @@ urlcolor=blue,
 \tableofcontents
 \clearpage
 \pagenumbering{arabic}
-% \newpage
 
-% add problems here
 \chapter{Basic I/O}
 \problem{assignment_01/01}{01_01}{Write a C program to perform input/output of all basic data types.}
 \problem{assignment_01/02}{01_02}{Write a C program to enter two numbers and find their sum.}
@@ -108,16 +114,16 @@ urlcolor=blue,
 \problem{assignment_02/18}{02_18}{Write a C program to calculate profit or loss.}
 \problem{assignment_02/19}{02_19}{Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: \\
 $ Percentage >= 90\% : Grade A \\
-Percentage >= 80\% : Grade B \\
-Percentage >= 70\% : Grade C \\
-Percentage >= 60\% : Grade D \\
-Percentage >= 40\% : Grade E \\
-Percentage < 40\% : Grade F $
+  Percentage >= 80\% : Grade B \\
+  Percentage >= 70\% : Grade C \\
+  Percentage >= 60\% : Grade D \\
+  Percentage >= 40\% : Grade E \\
+  Percentage < 40\% : Grade F $
 }
 \problem{assignment_02/20}{02_20}{Write a C program to input basic salary of an employee and calculate its Gross salary according to following: \\
 $ {Basic Salary} <= 10000 : HRA = 20\%, DA = 80\% \\
-Basic Salary <= 20000 : HRA = 25\%, DA = 90\% \\
-Basic Salary > 20000 : HRA = 30\%, DA = 95\% $
+  Basic Salary <= 20000 : HRA = 25\%, DA = 90\% \\
+  Basic Salary > 20000 : HRA = 30\%, DA = 95\% $
 }
 \problem{assignment_02/21}{02_21}{Write a C program to input electricity unit charges and calculate total electricity bill according to the given condition: \\
 For first 50 units Rs. 0.50/unit \\
@@ -126,6 +132,7 @@ For next 100 units Rs. 1.20/unit \\
 For unit above 250 Rs. 1.50/unit \\
 An additional surcharge of 20\% is added to the bill.
 }
+
 
 
 \chapter{Bitwise, Switch, Loops}
@@ -138,7 +145,7 @@ An additional surcharge of 20\% is added to the bill.
 \subproblem{assignment_03/05}{03_05}{Write a C program to create Simple Calculator using switch case.}
 \section{Loops}
 \subproblem{assignment_03/06}{03_06}{Write a C program to print all natural numbers from 1 to n. - using while loop}
-\subproblem{assignment_03/07}{03_07}{Write a C program to print all natural numbers in reverse \(from n to 1\). - using while loop}
+\subproblem{assignment_03/07}{03_07}{Write a C program to print all natural numbers in reverse (from n to 1). - using while loop}
 \subproblem{assignment_03/08}{03_08}{Write a C program to print all alphabets from a to z. - using while loop}
 \subproblem{assignment_03/09}{03_09}{Write a C program to print all odd number between 1 to 100.}
 \subproblem{assignment_03/10}{03_10}{Write a C program to find sum of all natural numbers between 1 to n.}
@@ -187,6 +194,7 @@ An additional surcharge of 20\% is added to the bill.
 \problem{assignment_04/15}{04_15}{Write a C program to left rotate an array by n positions.}
 \problem{assignment_04/16}{04_16}{Write a C program to right rotate an array by n postions.}
 
+
 \chapter{Function \& Recursion}
 \section{Functions}
 \subproblem{assignment_05/f_01}{05_f_01}{Write a C program to find cube of any number using function.}
@@ -231,6 +239,7 @@ An additional surcharge of 20\% is added to the bill.
 \problem{assignment_06/10}{06_10}{Write a C program to find first occurrence of a character in a given string.}
 \problem{assignment_06/11}{06_11}{Write a C program to count frequency of each character in a string.}
 
+
 \chapter{Pointers}
 \problem{assignment_07/01}{07_01}{Write a C program to add two numbers using pointers.}
 \problem{assignment_07/02}{07_02}{Write a C program to swap two numbers using pointers.}
@@ -243,9 +252,67 @@ An additional surcharge of 20\% is added to the bill.
 \problem{assignment_07/09}{07_09}{Write a C program to add two matrix using pointers.}
 \problem{assignment_07/10}{07_10}{Write a C program to find length of string using pointers.}
 
-\chapter{Structure \& Union}
-\chapter{Pattern Printing}
 
+\chapter{Structure \& Union}
+
+\problem{assignment_08/01}{08_01}{Define a structure called Cricket that will describe the following information:
+Player name, Team name, Batting average. \\
+Now, using Cricket, declare an array Players with 10 elements and write a program to read the information about the 10 players and print a team-wise list containing names of players with their batting average.
+}
+
+\section{Define a structure called Account that will describe the following information:
+  Account number, Account holder name, Balance. \smallskip
+  Using Account, declare an array Customers with 10 elements and write a program to read the information about 10 customers.
+  Now develop a menu and do the following (like an ATM) as shown below: \\
+  The system will ask for account number first.\\
+  Enter account number: \\
+  If the account number is present in the system then show the following menu; otherwise show an error and ask to enter account number again. \\
+  Welcome Cust Name \\
+  1. Withdraw \\
+  2. Deposit \\
+  3. Show Details with Balance \\
+  4. Exit \\
+  Enter your choice: \\
+  For both withdraw and deposit ask user to enter amount to be withdrawn or deposited. In case of withdraw check that the balance should not be negative.
+ }
+\underline{\emph{\Large Source Code :}}
+\inputminted[breaklines]{C}{assignment_08/02.c}
+\bigbreak
+\noindent
+\underline{\emph{\Large Program Output :}}
+\bigbreak
+\noindent
+\includegraphics[width=2.5in]{08_02_01}
+\includegraphics[width=3.5in]{08_02_02}
+
+
+\chapter{Pattern Printing}
+\includegraphics[width=\textwidth]{09}
+\clearpage
+\section{}
+\inputminted{c}{assignment_09/01.c}
+\section{}
+\inputminted{c}{assignment_09/02.c}
+\section{}
+\inputminted{c}{assignment_09/03.c}
+\section{}
+\inputminted{c}{assignment_09/04.c}
+\section{}
+\inputminted{c}{assignment_09/05.c}
+\section{}
+\inputminted{c}{assignment_09/06.c}
+\section{}
+\inputminted{c}{assignment_09/07.c}
+\section{}
+\inputminted{c}{assignment_09/08.c}
+\section{}
+\inputminted{c}{assignment_09/09.c}
+\section{}
+\inputminted{c}{assignment_09/10.c}
+\section{}
+\inputminted{c}{assignment_09/11.c}
+\section{}
+\inputminted{c}{assignment_09/12.c}
 
 
 \end{document}

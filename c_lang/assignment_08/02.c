@@ -55,11 +55,11 @@ void AskAccNumber()
 void ShowMenu(int idx)
 {
   int choice;
+  printf("\n+-----------------------+\n");
+  printf("\tWelcome %s\n", Customers[idx].holder_name);
+  printf("1. Withdraw, 2. Deposit, 3. Show Details, 4. Exit\n");
   printf("+-----------------------+\n");
-  printf("\tWelcome %s\t\n", Customers[idx].holder_name);
-  printf("1. Withdraw\n2. Deposit\n3. Show Details\n4. Exit\n");
-  printf("+-----------------------+\n");
-  printf("Enter your choice: ");
+  printf("Choose an operation: ");
   scanf("%d", &choice);
   switch (choice)
   {
@@ -130,7 +130,10 @@ void ShowDetails(int idx)
 
 int main()
 {
-  for (int i = 0; i < 10; i++)
+  int num;
+  printf("Enter number of customers: ");
+  scanf("%d", &num);
+  for (int i = 0; i < num; i++)
     NewAccount(&Customers[i], i);
 
   AskAccNumber();
