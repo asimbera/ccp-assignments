@@ -1,4 +1,4 @@
-// Find the greatest and smallest of 3 numbers.
+// Convert number in characters (167 - One Six Seven ).
 #include <iostream>
 #include <string.h>
 using namespace std;

@@ -1,22 +1,18 @@
-// Find if the number is a armstrong number.
+// Check a number Armstrong number or not.
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-  int a, len, cpy, i, sum = 0;
+  int num, rev = 0, it;
   cout << "Enter a number: ";
-  cin >> a;
-  len = floor(log10(a) + 1);
-  cpy = a;
-  while (cpy != 0)
+  cin >> num;
+  it = num;
+  while (it != 0)
   {
-    sum += pow((cpy % 10), len);
-    cpy /= 10;
+    rev = (rev * 10) + (it % 10);
+    it /= 10;
   }
-  cout << a
-       << (a == sum ? " is " : " is not ")
-       << "an Armstrorng number." << endl;
+  cout << num << " is " << (num, num == rev ? "a palindrome" : "not a palindrome") << endl;
   return 0;
 }
