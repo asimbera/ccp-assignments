@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Object Oriented Programming}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Assignment 1}
+\problem{01}{To find greatest / smallest of three numbers.}
+\problem{02}{To find ASCII value of a character.}
+\problem{03}{Addition, Subtract and Multiplication of two matrices of size 3X3..}
+\problem{04}{To print Fibonacci series.}
+\problem{05}{Check a number Prime or not.}
+\problem{06}{Read a value and print to decimal, octal and hexadecimal.}
+\problem{07}{Check a number Armstrong number or not.}
+\problem{08}{Check a number Palindrome or not.}
+\problem{09}{Swap two numbers without using third variable.}
+\problem{10}{Convert number in characters (167 - One Six Seven ).}
+
+\end{document}
+
