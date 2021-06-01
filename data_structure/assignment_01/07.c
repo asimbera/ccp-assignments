@@ -2,8 +2,7 @@
 
 int main()
 {
-  int arr_a[50], arr_b[50], arr_c[100], l, p;
-  float avg;
+  int arr_a[50], arr_b[50], arr_c[100], l, p, q;
 
   printf("No of elements for arr_a: ");
   scanf("%d", &l);
@@ -15,7 +14,7 @@ int main()
   for (int i = 0; i < p; i++)
     scanf("%d", &arr_b[i]);
 
-  int q = l + p;
+  q = l + p;
   for (int i = 0; i < q; i++)
   {
     if (i < l)

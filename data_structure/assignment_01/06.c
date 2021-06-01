@@ -10,7 +10,7 @@ int main()
   for (int i = 0; i < l; i++)
     scanf("%d", &arr_a[i]);
 
-  p = l % 2 == 0 ? l / 2 : (l + 1) / 2;
+  p = l / 2;
   q = l - p;
 
   for (int i = 0; i < p; i++)
