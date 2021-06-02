@@ -14,14 +14,17 @@ void read_data(int arr[3][3])
 
 void calculate(int arr_a[3][3], int arr_b[3][3], int arr_add[3][3], int arr_sub[3][3], int arr_mut[3][3])
 {
-  int i, j;
+  int i, j, k;
   for (int i = 0; i < 3; i++)
   {
     for (int j = 0; j < 3; j++)
     {
       arr_add[i][j] = arr_a[i][j] + arr_b[i][j];
       arr_sub[i][j] = arr_a[i][j] - arr_b[i][j];
-      arr_mut[i][j] = arr_a[i][j] * arr_b[i][j];
+      arr_mut[i][j] = 0;
+
+      for (k = 0; k < 3; k++)
+        arr_mut[i][j] += arr_a[i][k] * arr_b[k][j];
     }
   }
 }
