@@ -12,6 +12,6 @@ int main()
   int n;
   cout << "Enter a number: ";
   cin >> n;
-  cout << "The cube of 3 is: " << cube(3) << "\n";
+  cout << "The cube of " << n << " is: " << cube(n) << "\n";
   return 0;
 }
