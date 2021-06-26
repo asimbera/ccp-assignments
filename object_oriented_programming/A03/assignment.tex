@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Object Oriented Programming}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Assignment 3}
+\problem{01}{
+Create a class distance with foot and inch. Now add and subtract between
+two objects of distance type
+i) using objects as function argument,
+ii) returning object from function}
+\problem{02}{
+Create a class complex as above. Now add, subtract and multiply on two
+objects of complex type
+i) using objects as function argument,
+ii) returning object from function.
+}
+\problem{03}{
+Create a class complex with real and imaginary part (integer). Implement
+default, parameterized and copy constructor to initialize the objects of
+complex class and display them.
+}
+\problem{04}{
+Create a student class with data members as roll, name and marks with
+respective data types as int, chars and float. Now create n objects of
+student type and insert data into those objects. Display the student
+information who got the highest mark.
+}
+
+\end{document}
