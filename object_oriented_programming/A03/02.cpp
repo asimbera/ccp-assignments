@@ -52,8 +52,10 @@ int main()
 {
   Complex c1, c2, sum, diff, product;
 
+  c1.getdata();
   cout << "c1 = ";
   c1.display();
+  c2.getdata();
   cout << "c2 = ";
   c2.display();
 

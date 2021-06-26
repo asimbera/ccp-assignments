@@ -23,9 +23,9 @@ public:
   Distance subtract(Distance &obj)
   {
     Distance res;
-    res.inch = inch - obj.inch;
-    res.foot = foot - obj.foot + (res.inch / 12);
-    res.inch %= 12;
+    int t = ((foot * 12) + inch) - ((obj.foot * 12) + inch);
+    res.foot = t / 12;
+    res.inch = t % 12;
     return res;
   }
 
@@ -35,7 +35,7 @@ public:
   }
   void display()
   {
-    cout << foot << " Foot " << inch << " Inch";
+    cout << foot << " Foot " << inch << " Inch" << endl;
   }
 };
 
@@ -47,9 +47,11 @@ int main()
   d2.getdata();
   d2.display();
 
+  cout << "d1 + d2 = ";
   sum = d1.add(d2);
-  diff = d2.add(d2);
   sum.display();
+  cout << "d1 - d2 = ";
+  diff = d1.subtract(d2);
   diff.display();
 
   return 0;

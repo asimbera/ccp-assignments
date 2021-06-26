@@ -40,8 +40,11 @@ int main()
   Complex c1, c2(1, 3);
   Complex copy = Complex(5, 8);
 
+  cout << "c1 = ";
   c1.display();
+  cout << "c2 = ";
   c2.display();
+  cout << "c1 + c2 = ";
   copy.display();
 
   return 0;
