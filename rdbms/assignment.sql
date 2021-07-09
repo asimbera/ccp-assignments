@@ -23,12 +23,12 @@ create table movie (
 -- Invoice transaction table
 create table invoice (
     inv_no varchar(3) primary key not null,
-    mv_no varchar(2),
-    cust_id varchar(3),
+    mv_no varchar(2) references movie(mv_no),
+    cust_id varchar(3) references cust(cust_id),
     issue_date date,
-    return_date date,
-    foreign key (cust_id) references cust(cust_id),
-    foreign key (mv_no) references movie(mv_no)
+    return_date date
+--     foreign key (cust_id) references cust(cust_id),
+--     foreign key (mv_no) references movie(mv_no)
 );
 
 -- Insert data into `cust` table
@@ -55,19 +55,20 @@ insert into movie values
 
 -- Insert data into `invoice` table
 insert into invoice values
-    ('i01', '4', 'a01', '1993-06-23', '1993-06-25'),
-    ('i02', '3', 'a02', '1993-07-12', '1993-07-15'),
-    ('i03', '1', 'a02', '1993-07-15', '1993-07-18'),
-    ('i04', '6', 'a03', '1993-08-10', '1993-08-13'),
-    ('i05', '7', 'a04', '1993-07-05', '1993-07-08'),
-    ('i06', '2', 'a06', '1993-08-18', '1993-08-21'),
-    ('i07', '9', 'a05', '1993-06-07', '1993-06-10'),
-    ('i08', '9', 'a01', '1993-07-11', '1993-07-14'),
-    ('i09', '5', 'a03', '1993-06-06', '1993-06-09'),
-    ('i10', '8', 'a06', '1993-08-03', '1993-08-06');
+    ('i01', '4', 'a01', '1993-07-23', '1993-07-25'),
+    ('i02', '3', 'a02', '1993-08-12', '1993-08-15'),
+    ('i03', '1', 'a02', '1993-08-15', '1993-08-18'),
+    ('i04', '6', 'a03', '1993-09-10', '1993-09-13'),
+    ('i05', '7', 'a04', '1993-08-05', '1993-08-08'),
+    ('i06', '2', 'a06', '1993-09-18', '1993-09-21'),
+    ('i07', '9', 'a05', '1993-07-07', '1993-07-10'),
+    ('i08', '9', 'a01', '1993-08-11', '1993-08-14'),
+    ('i09', '5', 'a03', '1993-07-06', '1993-07-09'),
+    ('i10', '8', 'a06', '1993-09-03', '1993-09-06');
 
 -- Drop all tables.
 drop table cust, movie, invoice;
+drop table invoice;
 
 -- 1. Find out the names of all the customers.
 select fname, lname from cust;
@@ -80,7 +81,7 @@ select distinct type from movie;
 -- 5. Find the names of all customers having 'a' as the second letter in their fnames.
 select * from cust where fname like '_a%';
 -- 6. Find the lnames of all customers that begin with 's' or 'j'.
-select * from cust where lname like 'S%' or lname like 'J%';
+select lname from cust where lname like 'S%' or lname like 'J%';
 -- 7. Find out the customers who stay in an area whose second letter is 'a'.
 select * from cust where area like '_a';
 -- 8. Find the list of all customers who stay in area 'da' or area 'mu' or area 'gh'.
@@ -88,7 +89,8 @@ select * from cust where area in ('da', 'mu', 'gh');
 -- 9. Print the list of employees whose phone numbers are greater than the value 5550000.
 select * from cust where phone_no>5550000;
 -- 10. Print the information from invoice table of customers who have been issued movie in month of september.
-select * from invoice where extract(month from invoice.issue_date)=9;
+-- select extract(month from issue_date) from invoice;-- where extract(month from issue_date)=9;
+select * from invoice where extract(month from issue_date)=9;
 -- 11. Display the invoice table information for cust-id 'a01' and 'a02'.
 select * from invoice where cust_id in ('a01', 'a02');
 -- 12. Find the movies of type 'action' and 'comedy'.
@@ -96,9 +98,9 @@ select * from movie where type in ('action', 'comedy');
 -- 13. Find the movies whose price is greater than 150 and less than or equal to 200.
 select * from movie where price>150 and price<= 200;
 -- 14. Find the movies that cost more than 150 and also find the new cost as original cost * 15.
-select title, price * 15 from movie where price>150;
+select title, price, price * 15 from movie where price>150;
 -- 15. Rename the new column in the above query as new_price.
-select title, price * 15 as new_price from movie where price>150;
+select title, price, price * 15 as new_price from movie where price>150;
 -- 16. List the movies in sorted order of their titles.
 select * from movie order by title;
 -- 17. Print the names and types of all the movie except horror movies.
@@ -162,4 +164,57 @@ select m.title, invoice.cust_id, invoice.mv_no from invoice inner join movie m o
 select m.title, m.type from invoice inner join movie m on invoice.mv_no = m.mv_no left join cust c on invoice.cust_id = c.cust_id where c.fname='Vandana';
 -- 39. Find the names of customers who have been issued movie of type 'drama'.
 select concat(c.fname, ' ', c.lname) from invoice inner join movie m on invoice.mv_no = m.mv_no left join cust c on invoice.cust_id = c.cust_id where m.type='drama';
--- 40. Display the title, lname, fname for customers having movie number greater than or equal to <What?>.
+-- 40. Display the title, lname, fname for customers having movie number greater than or equal to three, in the following format.
+-- The movie taken by {name} {lname} is {title}.
+select concat('The movie taken by ', cust.fname, ' ', cust.lname, ' is ', m.title) from cust join invoice i on cust.cust_id = i.cust_id left join movie m on i.mv_no = m.mv_no where m.mv_no >= '3';
+
+--
+-- Nested Queries:
+--
+-- 41. Find out which customers have been issued movie number 9.
+select * from cust where cust_id = (select cust_id from movie where mv_no = '9');
+-- 42. Find the customer name and area with invoice number 'i10'.
+select fname, lname, area from cust where cust_id = (select cust_id from invoice where inv_no='i10');
+-- 43. Find the customer names and phone numbers who have been issued movies before the month of August.
+select fname, lname, phone_no from  cust where cust_id = any (select cust_id from invoice where issue_date<'01-aug-1993');
+-- 44. Find the name of the movie issued to 'vandana' and 'ivan'.
+select title from movie where mv_no= any(select mv_no from invoice where cust_id= any(select cust_id from cust where fname in ('Ivan', 'Vandana')));
+-- 45. List the movie number, movie names issued to all customers.
+select distinct mv_no, title from movie where mv_no= any(select mv_no from invoice);
+-- 46. Find the type and movie number of movie issued to cust-id 'a01' and 'a02.
+select type, mv_no from movie where mv_no= any(select mv_no from invoice where cust_id in ('a01', 'a02'));
+-- 47. Find out if the movie starring' tom cruise' is issued to any customer and print the cust_id whom it is issued.
+select cust_id from invoice where mv_no = (select mv_no from movie where star='tom cruise');
+-- 48. Find the lnamne, fname who have been issued movies.
+select fname, lname from cust where cust_id = any (select cust_id from movie);
+--
+-- Queries using date:
+--
+-- 49. Display the invoice number and day on which customers were issued movies.
+select inv_no,  issue_date from invoice;
+-- 50. Display the month (in alphabets) in which customers are supposed to return the movies.
+select inv_no, to_char(date(return_date), 'Mon') as return_date from invoice;
+-- 51. Display the issue-date in the format 'dd-month-yy'. For eg. 12-february-93.
+select inv_no, to_char(date(issue_date), 'DD-Mon-YYYY') as issue_date from invoice;
+-- 52. Find the date, 15 days after the current date.
+select to_char(date(now()) + 15, 'DD-Mon-YYYY');
+-- 53. Find the number of days elapsed between the current date and the return date of the movie for all customers.
+select age(date(return_date)) from invoice;
+
+--
+-- Table Updations
+--
+-- 54. Change the telephone number of Pramada to 466389.
+update cust set phone_no='466389' where fname='Pramada';
+-- 55. Change the issue - date of cust- id 'A01' to 24/07/93.
+update invoice set issue_date='1993-07-24' where cust_id='a01';
+-- 56. Change the price of 'gone with the wind' to Rs. 250.00.
+update movie set price=250.00 where title='gone with the wind';
+-- 57. Delete the record with invoice number 'i08' from the invoice table.
+delete from invoice where inv_no='i08';
+-- 58. Delete all the records having return date before 10th July'93.
+delete from invoice where return_date<'10-jul-1993';
+-- 59. Change the area of cust-id 'A05' to 'vs'.
+update cust set area='vs' where cust_id='a05';
+-- 60. Change the return date of invoice number 'i08' to 16-08-93.
+update invoice set return_date='1993-08-16' where inv_no='i08';
