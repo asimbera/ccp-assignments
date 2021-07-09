@@ -23,7 +23,7 @@ public:
   Distance subtract(Distance &obj)
   {
     Distance res;
-    int t = ((foot * 12) + inch) - ((obj.foot * 12) + inch);
+    int t = ((foot * 12) + inch) - ((obj.foot * 12) + obj.inch);
     res.foot = t / 12;
     res.inch = t % 12;
     return res;
