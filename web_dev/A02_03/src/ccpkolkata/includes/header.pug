@@ -1,0 +1,24 @@
+header.p-4.flex.justify-between.items-center.bg-gray-200.sm_px-10
+  //- Left
+  .flex.items-center
+    //- Logo
+    .bg-gray-400.w-40.h-10
+    //- LG: Menu
+    .hidden.lg_flex.lg_items-center.ml-8
+      a.ml-6.font-semibold.text-gray-600.hover_text-blue-600(href="#") Home
+      a.ml-6.font-semibold.text-gray-600.hover_text-blue-600(href="#") About
+      a.ml-6.font-semibold.text-gray-600.hover_text-blue-600(href="#") Programs
+      a.ml-6.font-semibold.text-gray-600.hover_text-blue-600(href="#") Blog
+      a.ml-6.font-semibold.text-gray-600.hover_text-blue-600(href="#") Contact
+  //- Right
+  div.flex.items-center
+    //- XL: Call Us
+    div.hidden.xl_block
+      a(href="tel:+910000000000")
+        span.font-semibold.text-green-600 Call Us :&nbsp;
+        | +91 00000 00000
+    //- SM: Social Links
+    //- @TODO
+
+    //- Hamburger Menu
+    button.p-2.flex.items-center.bg-blue-500.text-white.ring-2.rounded.lg_hidden: span.material-icons-round menu
