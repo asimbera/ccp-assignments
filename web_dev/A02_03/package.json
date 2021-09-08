@@ -1,0 +1,23 @@
+{
+  "name": "webdev-unified",
+  "source": "./src/index.pug",
+  "version": "1.0.0",
+  "author": "Asim Bera <asimbera@outlook.in>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@parcel/transformer-pug": "2.0.0-rc.0",
+    "autoprefixer": "^10.3.4",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.10"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "line-awesome": "^1.3.0"
+  }
+}
