@@ -1,25 +1,26 @@
 mixin navlink(title, href)
   a.py-1.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline(href=href)= title
 
-footer.py-6.px-4
+footer.py-6.px-4.lg_px-14
   hr
   //- Links
   .py-10.grid.grid-cols-1.gap-3.sm_grid-cols-2.md_grid-cols-3.lg_grid-cols-4.xl_grid-cols-5
     //- Logo
-    .bg-gray-400.w-40.h-10.mb-6.sm_m-0
+    img.h-10.w-auto.mb-6.sm_m-0(src="./assets/images/logo.png", alt="Logo")
     //- Quick Links
     div
       h1.font-serif.text-lg.mb-2 Quick Links
       .flex.flex-col.items-start
-        +navlink("About Us", "#")
+        +navlink("About", "#")
         +navlink("Gallery", "#")
         +navlink("Events", "#")
     //- Programs
     div
-      h1.font-serif.text-lg.mb-2 Programs
+      h1.font-serif.text-lg.mb-2 Explore
       .flex.flex-col.items-start
-        +navlink("Program #1", "#")
-        +navlink("Program #2", "#")
+        +navlink("Places to visit", "#")
+        +navlink("Things to do", "#")
+        +navlink("Events to enjoy", "#")
     //- Resources
     div
       h1.font-serif.text-lg.mb-2 Resources
@@ -34,3 +35,4 @@ footer.py-6.px-4
         li.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline.mr-2: a(href="#") Github
         li.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline.mr-2: a(href="#") Twitter
       p.text-gray-700 2021 &copy Asim Bera
+      p.text-xs.text-gray-700 Content By : Suman Mondal

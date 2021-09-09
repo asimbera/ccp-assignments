@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 .hero {
-  background-image: url(assets/images/bitmap.png);
+  background-image: url(assets/images/hero.jpg);
   min-height: 640px;
 }
 
@@ -17,13 +17,29 @@
   background-image: url(assets/images/bitmap.png);
 }
 
-.nature,
-.foods,
+.nature {
+  background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0.7)
+    ),
+    url(assets/images/nature.jpg);
+}
+
 .heritages {
   background-image: linear-gradient(
       to bottom,
       hsla(0, 0%, 0%, 0),
       hsla(0, 0%, 0%, 0.7)
     ),
-    url(assets/images/bitmap.png);
+    url(assets/images/iskcon.jpg);
+}
+
+.foods {
+  background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0.7)
+    ),
+    url(assets/images/food.jpg);
 }
