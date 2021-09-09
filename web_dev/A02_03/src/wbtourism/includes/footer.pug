@@ -1,0 +1,36 @@
+mixin navlink(title, href)
+  a.py-1.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline(href=href)= title
+
+footer.py-6.px-4
+  hr
+  //- Links
+  .py-10.grid.grid-cols-1.gap-3.sm_grid-cols-2.md_grid-cols-3.lg_grid-cols-4.xl_grid-cols-5
+    //- Logo
+    .bg-gray-400.w-40.h-10.mb-6.sm_m-0
+    //- Quick Links
+    div
+      h1.font-serif.text-lg.mb-2 Quick Links
+      .flex.flex-col.items-start
+        +navlink("About Us", "#")
+        +navlink("Gallery", "#")
+        +navlink("Events", "#")
+    //- Programs
+    div
+      h1.font-serif.text-lg.mb-2 Programs
+      .flex.flex-col.items-start
+        +navlink("Program #1", "#")
+        +navlink("Program #2", "#")
+    //- Resources
+    div
+      h1.font-serif.text-lg.mb-2 Resources
+      .flex.flex-col.items-start
+        +navlink("FAQ", "#")
+        +navlink("Submit Ticket", "#")
+        +navlink("Contact Us", "#")
+    //- Copyright
+    div
+      p.uppercase.mb-2 Find Me On
+      ul.flex.items-center.mb-4
+        li.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline.mr-2: a(href="#") Github
+        li.text-sm.transition.duration-500.ease-in-out.text-gray-700.hover_text-green-700.hover_underline.mr-2: a(href="#") Twitter
+      p.text-gray-700 2021 &copy Asim Bera

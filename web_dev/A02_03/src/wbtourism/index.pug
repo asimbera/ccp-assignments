@@ -1,0 +1,105 @@
+extends layout.pug
+
+mixin feature-card()
+  .flex.items-center
+    div.p-3.bg-green-100.rounded-full.flex.items-center.mr-4: span.material-icons-round.text-green-800 groups
+    div.flex.flex-col
+      p.font-semibold.mb-1 Lorem, ipsum.
+      p.sm_max-w-xs Lorem, ipsum dolor sit amet consectetur adipisicing.
+
+mixin places-slide()
+  li.splide__slide.grid.grid-cols-1.gap-2.md_grid-cols-2.md_gap-0
+    .flex.flex-col.md_col-start-2.md_col-span-1.md_col-row-1
+      div.block.border-b-2.border-green-800.mb-2.mr-14.md_mr-0.md_pl-10.md_w-max
+        p.font-serif.text-lg Lorem, ipsum dolor.
+      p.text-sm.md_pl-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. A hic error ipsam voluptate neque iste quaerat provident aperiam soluta qui! Sed voluptate asperiores deserunt ipsum beatae magni ducimus, iste nihil autem consectetur ut sint perferendis iusto veniam quam nesciunt, corrupti rem, similique quae! Est odit, voluptas vitae esse amet culpa.
+    img.w-full.h-full.object-cover.md_col-start-1.md_col-span-1.md_row-start-1(src="./assets/images/bitmap.png", alt="")
+
+mixin events-slide()
+  li.splide__slide
+    .splide__slide__container
+      img(src="assets/images/bitmap.png", alt="")
+    h1.font-serif.mt-2 Lorem, ipsum dolor.
+
+block content
+  //- Hero
+  section.hero.bg-center.bg-cover.bg-no-repeat.p-2.flex.flex-col.items-center.justify-between.text-white
+    div
+    .flex.flex-col.items-center
+      p.uppercase.text-2xl.font-semibold Welcome To
+      p.uppercase.text-5xl.font-bold.border-b-2.border-green-600.mt-4 West Bengal
+    div
+
+  //- Something IDK
+  section.px-4.py-10.grid.grid-cols-1.gap-3.md_grid-cols-2.md_gap-0.lg_px-14
+    //- Text
+    div.text-gray-700
+      div.border-b-2.border-green-600.mr-24.mb-2.md_mr-0
+        p.uppercase.font-semibold.font-serif.text-xl.w-48 Lorem ipsum dolor sit amet.
+      p.font-semibold.text-sm.text-green-800.mb-8 Lorem ipsum dolor sit amet.
+      p.max-w-sm Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat, culpa inventore et doloremque amet delectus beatae cupiditate dolore blanditiis iste consectetur! Placeat quidem vero, cumque repudiandae sit corporis sunt eos beatae temporibus, reprehenderit necessitatibus quo totam quis odit possimus suscipit, rem iure exercitationem iusto! Numquam tempora quia in autem!
+    //- Image
+    img.w-full.h-full.object-cover(src="./assets/images/bitmap.png", alt="")
+
+  //- Why Visit Bengal
+  section.px-4.py-10.text-gray-700.bg-green-50.flex.flex-col.items-center.lg_px-14
+    h1.uppercase.font-bold.font-serif.text-2xl.text-center.mb-1 Why Visit Bengal
+    p.font-semibold.text-sm.text-green-800.mb-6 Lorem ipsum dolor sit amet consectetur adipisicing.
+    .grid.grid-cols-1.gap-3.md_grid-cols-2
+      //- Feature 1
+      +feature-card
+      +feature-card
+      +feature-card
+      +feature-card
+      +feature-card
+      +feature-card
+
+
+  //- Places To Visit
+  section.px-4.py-10.text-gray-700.flex.flex-col.items-center.lg_px-14
+    h1.uppercase.font-bold.font-serif.text-2xl.text-center.mb-1 Places To Visit
+    p.font-semibold.text-sm.text-green-800.mb-6 Lorem ipsum dolor sit amet consectetur adipisicing.
+    .splide.w-full
+      .splide__slider
+        .splide__arrows
+          button.splide__arrow.splide__arrow--prev: span.material-icons-round arrow_back_ios
+          button.splide__arrow.splide__arrow--next: span.material-icons-round arrow_forward_ios
+        .splide__track
+          ul.splide__list
+            +places-slide
+            +places-slide
+            +places-slide
+            +places-slide
+            +places-slide
+  //- Ad placement
+  section.ad.h-56.w-full.bg-cover.bg-center.bg-no-repeat.p-8.flex.flex-col.justify-end.text-white
+    p.uppercase.font-serif.font-bold.text-lg.mb-1 Lorem ipsum dolor sit.
+    p.text-sm.md_max-w-sm Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quisquam!
+  //- Events
+  section.px-4.py-10.text-gray-700.flex.flex-col.items-center.lg_px-14
+    h1.uppercase.font-bold.font-serif.text-2xl.text-center.mb-1 Events to Enjoy
+    p.font-semibold.text-sm.text-green-800.mb-6 Lorem ipsum dolor sit amet consectetur adipisicing.
+    .splide.events.w-full
+      .splide__slider
+        .splide__track
+          ul.splide__list
+            +events-slide
+            +events-slide
+            +events-slide
+            +events-slide
+            +events-slide
+
+  //- Discover More
+  section.px-4.py-10.text-gray-700.flex.flex-col.items-center.lg_px-14
+    h1.uppercase.font-bold.font-serif.text-2xl.text-center.mb-1 Discover More
+    p.font-semibold.text-sm.text-green-800.mb-6 Lorem ipsum dolor sit amet consectetur adipisicing.
+    .w-full.grid.grid-cols-1.gap-3.sm_grid-cols-2.md_grid-cols-3
+      //- Nature
+      a.nature.h-52.w-full.bg-center.bg-cover.bg-no-repeat.flex.flex-col.justify-end.p-4(href="#")
+        p.font-serif.text-white.text-xl Nature
+      //- Foods
+      a.foods.h-52.w-full.bg-center.bg-cover.bg-no-repeat.flex.flex-col.justify-end.p-4(href="#")
+        p.font-serif.text-white.text-xl Foods
+      //- Heritage
+      a.heritages.h-52.w-full.bg-center.bg-cover.bg-no-repeat.flex.flex-col.justify-end.p-4(href="#")
+        p.font-serif.text-white.text-xl Heritages
