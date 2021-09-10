@@ -1,0 +1,6 @@
+[submodule "web_dev/A02"]
+	path = web_dev/A02
+	url = https://github.com/asimbera/ccpkolkata.git
+[submodule "web_dev/A03"]
+	path = web_dev/A03
+	url = https://github.com/asimbera/wbtourism.git
