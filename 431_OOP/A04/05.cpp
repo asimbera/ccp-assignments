@@ -1,5 +1,4 @@
-// 5. Write a program to overload binary + , - , != operators for binary
-// numbers
+// 5. Write a program to overload binary + , - , != operators for binary numbers
 
 #include <iostream>
 #include <bits/stdc++.h>

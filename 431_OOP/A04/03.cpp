@@ -1,5 +1,4 @@
-// Write down a program which reads a complex number. Now decrement
-// the real and imaginary part and display
+// Write down a program which reads a complex number. Now decrement the real and imaginary part and display
 
 #include <iostream>
 using namespace std;
