@@ -12,28 +12,20 @@ This repository is a collection of open-source implementation of assignment from
 - Execution example screenshots.
 - Latex documentation of the assignments.
 - Auto generated pdf for each tags. `[Coming Soon]`
-- Organized by year, semester and subject.
+- Organized by year, semester and subject code (for say, Data Structure's Sub-Code is 336)
 
 ### Table of contents
 
-- [Third Semester]()
+* #### Third Semester
 
-  - [Programming in C](c_lang)
+  - [332_C-Programming](332_C/)
+  - [336_Data-Structure](336_DS/)
 
-    1. [x] [Basics I/O](c_lang/assignment_01)
-    2. [x] [If-Else](c_lang/assignment_02)
-    3. [ ] [Bitwise, Switch, Loops](c_lang/assignment_03)
-    4. [x] [Array](c_lang/assignment_04)
-    5. [x] [Function & Recursion](c_lang/assignment_05)
-    6. [x] [Strings in C](c_lang/assignment_06)
-    7. [ ] [Pointers](c_lang/assignment_07)
-    8. [ ] [Structure & Union](c_lang/assignment_08)
-    9. [x] [Pattern Printing](c_lang/assignment_09)
-
-  - [Data Structure](data_structure)
-
-    1. [ ] [Array]()
-    2. [ ] [Stack & Queue]()
+* #### Fourth Semester
+  - [430_Relational-Database-Management-System](430_RDBMS/)
+  - [431_Object-Oriented-Programming](431_OOP/)
+  - [432_Computer-Graphics](432_CG/)
+  - [PPII_Web-Development](PPII_WebDev/)
 
 ### Usage
 
@@ -66,3 +58,5 @@ I'm assuming you have somewhat knowledge of linux system and command line.
 ### Feedback
 
 If you find any kind of bug, error or typos, then fell free to create an issue or make a pull request. You can also reach me via [email](mailto:asimbera@outlook.in).
+
+
