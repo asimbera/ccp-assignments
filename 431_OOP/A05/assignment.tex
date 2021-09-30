@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Object Oriented Programming}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Assignment 5}
+\problem{01}{Write a program in which class BATSMAN inheritance class PERSON. Using Single Inheritance}
+\problem{02}{Write a program that uses Multilevel Inheritance to implement class PERSONS, EMPLOYEE, MANAGER}
+\problem{03}{Write a program that uses Hierarchical Inheritance to implement class EMPLOYEE inherited by two classes CONTRACT and PERMANENT}
+\problem{04}{Write a program that uses Multiple inheritance to implement class SCIENTIST from two base class STUDENT and EMPLOYEE}
+\problem{05}{Write a program that implements hybrid inheritance. Classes STUDENT and FACULTY inherit the class PERSON. FACULTY must be inherited by the class PUBLICATIONS}
+\problem{06}{Write a Program that implements the inheritance}
+\problem{07}{Write a Program to implements the concept of virtual base class}
+
+
+\end{document}
