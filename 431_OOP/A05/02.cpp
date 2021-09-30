@@ -1,35 +1,30 @@
+// 2. Write a program that uses Multilevel Inheritance to implement class PERSONS, EMPLOYEE, MANAGER
+
 #include <iostream>
 using namespace std;
 
-class Person
-{
-public:
-  string name;
-  int age;
-  Person(string n, int a)
-  {
-    name = n;
-    age = a;
-  }
-  void display() { cout << "name=" << name << ", age=" << age << endl; }
+class person {
+  public:
+    person () {
+      cout << "I am a Person" << endl;
+    }
 };
 
-class Employee : public Person
-{
-public:
-  string company;
-  Employee(string n, int a, string c) : Person(n, a)
-  {
-    company = c;
-  }
+class employee : public person {
+  public:
+    employee () {
+      cout << "I am an Employee" << endl;
+    }
 };
 
-class Manager : public Employee
-{
+class manager : public employee {
+  public:
+    manager () {
+      cout << "I am a Manager" << endl;
+    }
 };
 
-int main()
-{
-
+int main () {
+  employee emp;
   return 0;
 }
