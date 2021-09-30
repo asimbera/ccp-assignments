@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Computer Graphics}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{./macro}
+% document settings end
+
+\begin{document}
+\input{./cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Computer Graphics Assignment}
+
+\problem{01}{Write a C program to draw a line using DDA algorithm}
+\problem{02}{Write a C program to draw a line using Bresenham’s line drawing algorithm}
+\problem{03}{Write a C program to draw a circle using Midpoint circle drawing algorithm}
+\problem{04}{Write a C Program to show the two dimensional Translation of an Object}
+\problem{05}{Write a C Program to show the two dimensional Rotation of an Object}
+\problem{06}{Write a C Program to show the two dimensional Scaling of an Object}
+
+\end{document}
