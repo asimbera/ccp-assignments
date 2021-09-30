@@ -1,4 +1,4 @@
-// 5. Write a program that implements hybrid inheritance. Classes STUDENT and
+//05. Write a program that implements hybrid inheritance. Classes STUDENT and
 // FACULTY inherit the class PERSON. FACULTY must be inherited by the
 // class PUBLICATIONS
 

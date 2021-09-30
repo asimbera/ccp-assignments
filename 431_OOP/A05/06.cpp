@@ -1,4 +1,4 @@
-//6. Write a Program that implements the inheritance following below -
+//06. Write a Program that implements the inheritance following below -
 // Students
 // ├── Arts
 // ├── Engineering

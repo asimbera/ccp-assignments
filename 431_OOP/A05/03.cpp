@@ -1,4 +1,4 @@
-// 3. Write a program that uses Hierarchical Inheritance to implement class
+//03. Write a program that uses Hierarchical Inheritance to implement class
 // EMPLOYEE inherited by two classes CONTRACT and PERMANENT
 
 #include <iostream>

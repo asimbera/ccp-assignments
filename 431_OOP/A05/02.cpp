@@ -1,4 +1,4 @@
-// 2. Write a program that uses Multilevel Inheritance to implement class PERSONS, EMPLOYEE, MANAGER
+//02. Write a program that uses Multilevel Inheritance to implement class PERSONS, EMPLOYEE, MANAGER
 
 #include <iostream>
 using namespace std;

@@ -1,4 +1,4 @@
-//4. Write a program that uses Multiple inheritance to implement class SCIENTIST
+//04. Write a program that uses Multiple inheritance to implement class SCIENTIST
 // from two base class STUDENT and EMPLOYEE
 
 #include<iostream>
