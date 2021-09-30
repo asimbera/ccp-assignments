@@ -1,4 +1,4 @@
-// Write a C Program to show the two dimensional Scaling of an Object.
+//06. Write a C Program to show the two dimensional Scaling of an Object.
 
 #include <stdio.h>
 void scale(int a[][2], int b[], int n)

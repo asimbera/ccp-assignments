@@ -1,4 +1,4 @@
-// Write a C program to draw a line using DDA algorithm
+//01. Write a C program to draw a line using DDA algorithm
 
 #include <stdio.h>
 #include <math.h>

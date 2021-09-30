@@ -1,4 +1,4 @@
-// Write a C Program to show the two dimensional Rotation of an Object.
+//05. Write a C Program to show the two dimensional Rotation of an Object.
 
 #include <math.h>
 #include <stdio.h>
