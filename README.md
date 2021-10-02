@@ -2,7 +2,7 @@
 
 ### Overview
 
-<img src="/c_lang/assignment_01/outputs/logo.png" alt="Logo" height="100" width="100" style="float:right">
+<img src="/332_C/assignment_01/outputs/logo.png" alt="Logo" height="100" width="100" style="float:right">
 This repository is a collection of open-source implementation of assignment from Central Calcutta Polytechnic. The implementation meant to be a learning source for future students and program enthusiasts.
 
 ### Features
