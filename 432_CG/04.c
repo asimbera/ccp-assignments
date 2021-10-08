@@ -1,4 +1,4 @@
-// Write a C Program to show the two dimensional Translation of an Object
+//04. Write a C Program to show the two dimensional Translation of an Object
 
 #include <stdio.h>
 void translate(int a[][2], int b[], int n)

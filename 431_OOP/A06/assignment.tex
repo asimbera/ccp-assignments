@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Object Oriented Programming}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Assignment 6}
+\problem{01}{Write a program which generates a template class, by which we can perform integer type data addition and float type data addition also use of function template with multiple parameters}
+\problem{02}{Use of class template with multiple parameters}
+\problem{03}{Write a program for division operation to handle an exception if the divisor is 0}
+\problem{04}{Write a program in C++ to handle multiple exceptions for different operational output}
+
+
+\end{document}

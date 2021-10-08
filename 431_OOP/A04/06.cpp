@@ -1,5 +1,4 @@
-// Write a program to overload comparison operators (>, <=, ==) for two
-// objects of same type.
+// Write a program to overload comparison operators (>, <=, ==) for two objects of same type.
 
 #include <iostream>
 using namespace std;

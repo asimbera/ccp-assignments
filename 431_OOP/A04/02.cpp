@@ -1,5 +1,4 @@
-// Write a program which reads a complex number. Now increment only
-// the real part and display the same.
+// Write a program which reads a complex number. Now increment only the real part and display the same.
 
 #include <iostream>
 using namespace std;

@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Object Oriented Programming}
+\rhead{Asim Bera}
+% \lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{View on Github}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\input{../macro}
+% document settings end
+
+\begin{document}
+\input{../cover}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Assignment 4}
+
+\problem{01}{Write a program to keep track of number of objects created, number of objects destroyed}
+\problem{02}{Write a program which reads a complex number. Now increment only the real part and display the same}
+\problem{03}{Write down a program which reads a complex number. Now decrement the real and imaginary part and display}
+\problem{04}{Overload arithmetical binary operators (+, -, *) for complex numbers}
+\problem{05}{Write a program to overload binary + , - , != operators for binary numbers}
+\problem{06}{Write a program to overload comparison operators (>, <=, ==) for two objects of same type}
+\problem{07}{Define a class string. Use overload == operator to compare two srings}
+
+\end{document}

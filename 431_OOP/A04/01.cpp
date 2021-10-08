@@ -1,5 +1,4 @@
-// Write a program to keep track of number of objects created, number of
-// objects destroyed.
+// Write a program to keep track of number of objects created, number of objects destroyed.
 
 #include <iostream>
 using namespace std;

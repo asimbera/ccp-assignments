@@ -1,4 +1,4 @@
-// Write a C program to draw a line using Bresenham’s line drawing
+//02. Write a C program to draw a line using Bresenham’s line drawing
 // algorithm.
 
 #include <stdio.h>
