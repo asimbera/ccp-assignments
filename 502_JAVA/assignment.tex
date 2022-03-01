@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{fontspec}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+\usemintedstyle{bw}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Java Programming}
+\rhead{Asim Bera}
+\lfoot{\href{https://github.com/asimbera/ccp-assignments.git}{https://github.com/asimbera/ccp-assignments.git}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+\setmainfont{Comfortaa}
+\setmonofont{FantasqueSansMono Nerd Font}
+
+\input{./macro}
+% document settings end
+
+\begin{document}
+\input{./cover}
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\section{Java Assignment}
+\problem{Q01}{Print the average of three numbers entered by user by creating a class named "Average" having a method to calculate and print the average.}
+\problem{Q02}{Print the sum, differences, and product of two complex numbers by creating a class named "Complex" with separate methods for each operation whose real and imaginary part is to  be entered by the user.}
+\problem{Q03}{Write a program that would print the information (name, year of joining, salary, address) of three employees by creating a class "Employee". The output should be in a tabular form.}
+\problem{Q04}{Write a program to input the details of a student using constructor and display the same.}
+\problem{Q05}{Write a program to print the information of three employees by creating a class "Employee" and show the details of all three Employees  using Abstract class.}
+\problem{Q06}{Write a program to give the example  for "this" operator. And also use the "this" keyword as a return statement.}
+\problem{Q07}{Write a program to add all the elements of a One-Dimensional array.}
+\problem{Q08}{Write a program to reverse the elements of a One-Dimensional array.}
+\problem{Q09}{Write a program to perform addition,  subtraction, multiplication, and division of two One-Dimensional arrays.}
+\problem{Q10}{Write a program to perform addition  of two Two-Dimensional arrays.}
+\problem{Q11}{Write a program to take a string as input and display the string and its length. (Using String Functions).}
+\problem{Q12}{Write a program to check whether the inputted String is a Palindrome String or not.}
+\problem{Q13}{Write a program to count the total number of characters in a string.}
+\problem{Q14}{Write a program to count the total number of vowels and consonants in a string.}
+\problem{Q15}{Write a program to remove all the white spaces from a string.}
+\problem{Q16}{Write a program to find the duplicate characters in a string.}
+\problem{Q17}{Write a program to swap two string variables without using third or temp variable.}
+\problem{Q18}{Write a program that accepts a shopping list of five items from the command line and stores them in a vector.}
+\problem{Q19}{Modify the program of previous problem to accomplish the following: \\
+To delete an item in the list.\\
+To add an item at a specified location in the list.\\
+To add an item at the end of the list.\\
+To print the contents of the vector.}
+
+\end{document}
