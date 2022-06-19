@@ -1,0 +1,14 @@
+\newcommand{\problem}[2]{
+  \subsection{#2}
+  \underline{\emph{\Large Source Code :}}
+  \inputminted[breaklines,tabsize=2]{c}{#1.c}
+  \bigbreak
+  \noindent
+  \underline{\emph{\Large Program Output :}}
+  \bigbreak
+  \noindent
+  \includegraphics[width=110mm,scale=0.5]{#1}
+  % \newpage
+  % \bigbreak
+  \vspace{1cm}
+}

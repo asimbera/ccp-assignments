@@ -1,0 +1,39 @@
+% \newcommand{\problem}[2]{
+%   \subsection{#2}
+%   \underline{\emph{\Large Source Code :}}
+%   \inputminted[breaklines,fontsize=\large,linenos]{java}{#1.java}
+%   \bigbreak
+%   \noindent
+%   \underline{\emph{\Large Program Output :}}
+%   \bigbreak
+%   \noindent
+%   \includegraphics{#1}
+%   % \newpage
+%   % \bigbreak
+%   \vspace{1cm}
+% }
+
+\newcommand{\problem}[3]{
+  \section{#3}
+    \underline{{\LARGE Source Code :}}
+    \inputminted[breaklines]{java}{#1.java}
+    \bigbreak
+    \noindent
+    \underline{{\LARGE Program Output :}}
+    \bigbreak
+    \noindent
+    \includegraphics[width=100mm,scale=0.5]{outputs/#2}
+% \newpage
+}
+\newcommand{\subproblem}[3]{
+  \subsection{#3}
+    \underline{\emph{\Large Source Code :}}
+    \inputminted[breaklines]{java}{#1.java}
+    \bigbreak
+    \noindent
+    \underline{\emph{\Large Program Output :}}
+    \bigbreak
+    \noindent
+    \includegraphics[width=110mm,scale=0.5]{outputs/#2}
+% \newpage
+}
